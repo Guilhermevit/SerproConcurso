@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+  max-width: 95%;
+  margin: 2% auto; /* Centraliza o container horizontalmente e adiciona um espaço vertical */
+  font-family: Arial, sans-serif; /* Exemplo de fonte */
+  background-color: #f4f4f4; /* Exemplo de cor de fundo */
+  padding: 2%;
+  border-radius: 10px; /* Borda arredondada */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.grayHighlight {
+  background-color: #d3d3d3;
+}
+
+table {
+  width: 100%; /* Ocupa a largura total do container */
+  border-collapse: collapse; /* Remove espaços entre as células da tabela */
+  margin-top: 20px; /* Espaço acima da tabela */
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc; /* Adiciona borda aos elementos da tabela */
+}
+th,
+td {
+  padding: 10px 15px; /* Espaçamento interno das células da tabela */
+  text-align: left;
+}
+
+th {
+  background-color: #007bff; /* Cor de fundo dos cabeçalhos da tabela */
+  color: white; /* Cor do texto dos cabeçalhos */
+}
