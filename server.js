@@ -1,14 +1,14 @@
-const express = require("express");
-const fs = require("fs");
+import express from "express";
+import { readFile } from "fs";
 const app = express();
 const PORT = 3001;
-const cors = require("cors");
+import cors from "cors";
 
 app.use(cors());
 
 function loadJSON(filename) {
   return new Promise((resolve, reject) => {
-    fs.readFile(filename, { encoding: "utf-8" }, (err, data) => {
+    readFile(filename, { encoding: "utf-8" }, (err, data) => {
       if (err) {
         reject(err);
       } else {

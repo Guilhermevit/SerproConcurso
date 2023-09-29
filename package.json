@@ -1,52 +1,51 @@
 {
-  "name": "serpro",
+  "name": "fullstack-project",
   "version": "1.0.0",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start-server": "node server.js",
-    "start-frontend": "react-scripts start",
-    "start": "concurrently \"npm run start-server\" \"npm run start-frontend\"",
-    "build": "react-scripts build",
-    "test-frontend": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dev": "nodemon server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "private": true,
+  "type": "module",
+  "author": "Your Name",
+  "license": "MIT",
   "description": "",
+  "scripts": {
+    "start:frontend": "vite --open",
+    "start:server": "node server.js",
+    "start": "concurrently \"npm run start:server\" \"npm run start:frontend\"",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"./**/*.ts\"  \"./**/*.tsx\"  \"./**/*.css\" \"./**/*.html\"",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/icons-material": "^5.14.7",
+    "@mui/material": "^5.14.7",
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.5.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "@vitejs/plugin-react-swc": "^3.3.2",
     "concurrently": "^6.5.1",
-    "nodemon": "^3.0.1"
+    "eslint": "^8.48.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
   }
 }
