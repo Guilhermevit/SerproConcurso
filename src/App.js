@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import jsonData from "./final3.json";
+import jsonData from "./final4.json";
 
 function App() {
   const [candidates, setCandidates] = useState([]);
